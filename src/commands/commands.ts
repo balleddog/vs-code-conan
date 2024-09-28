@@ -65,7 +65,7 @@ export class Commands{
         let argument = this.config.getConan(profileToCreate);
         let conanfile = this.executor.normalizePathForExecution(argument.path);
         let profile = argument.installProfile;
-        let profileCommand = `--profile:build ${profile.build} --profile:host ${profile.host}`; 
+        let profileCommand = `--profile:host ${profile.host}`; 
         let createUser = argument.user;
         let createChannel = argument.channel;
         let createArg = argument.createArguments;
